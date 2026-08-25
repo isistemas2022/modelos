@@ -1,0 +1,529 @@
+.login-page {
+    min-height: calc(100vh - 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  
+    background:
+      radial-gradient(
+        circle at top right,
+        #e6f5ff,
+        transparent 40%
+      ),
+      #f7fbff;
+  }
+  
+  .login-card {
+    width: 100%;
+    max-width: 440px;
+    padding: 45px;
+  
+    background: #ffffff;
+    border: 1px solid #e4edf5;
+    border-radius: 22px;
+  
+    box-shadow:
+      0 20px 60px rgba(16, 42, 67, 0.12);
+  }
+  
+  /* BRAND */
+  
+  .login-brand {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  
+  .brand-icon {
+    width: 60px;
+    height: 60px;
+  
+    margin: auto;
+    margin-bottom: 15px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 16px;
+  
+    background: #0879c9;
+    color: white;
+  
+    font-size: 20px;
+    font-weight: 800;
+  
+    box-shadow: 0 10px 25px rgba(8, 121, 201, 0.25);
+  }
+  
+  .login-brand h1 {
+    margin: 0;
+  
+    color: #102a43;
+  
+    font-size: 30px;
+    font-weight: 800;
+  }
+  
+  .login-brand h1 span {
+    color: #0879c9;
+  }
+  
+  .login-brand p {
+    margin-top: 7px;
+  
+    color: #829ab1;
+    font-size: 14px;
+  }
+  
+  /* TITLE */
+  
+  .login-title {
+    margin-bottom: 25px;
+  }
+  
+  .login-title h2 {
+    margin: 0 0 8px;
+  
+    color: #102a43;
+    font-size: 25px;
+  }
+  
+  .login-title p {
+    margin: 0;
+  
+    color: #627d98;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .login-title strong {
+    display: block;
+    margin-top: 5px;
+  
+    color: #0879c9;
+    font-size: 14px;
+    word-break: break-all;
+  }
+  
+  /* FORM */
+  
+  .login-form label {
+    display: block;
+    margin-bottom: 8px;
+  
+    color: #243b53;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .login-form input {
+    width: 100%;
+    height: 50px;
+  
+    padding: 0 15px;
+  
+    border: 1px solid #d9e2ec;
+    border-radius: 9px;
+  
+    outline: none;
+  
+    color: #102a43;
+    font-size: 15px;
+  
+    transition: 0.2s;
+  }
+  
+  .login-form input:focus {
+    border-color: #0879c9;
+  
+    box-shadow:
+      0 0 0 3px rgba(8, 121, 201, 0.1);
+  }
+  
+  .otp-input {
+    text-align: center;
+  
+    letter-spacing: 10px;
+  
+    font-size: 24px !important;
+    font-weight: 700;
+  }
+  
+  /* BUTTON */
+  
+  .login-button {
+    width: 100%;
+    height: 50px;
+  
+    margin-top: 20px;
+  
+    border: none;
+    border-radius: 9px;
+  
+    background: #0879c9;
+    color: white;
+  
+    font-size: 15px;
+    font-weight: 700;
+  
+    cursor: pointer;
+  
+    transition: 0.3s;
+  }
+  
+  .login-button:hover {
+    background: #0568ad;
+    transform: translateY(-1px);
+  }
+  
+  .login-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  /* MESSAGE */
+  
+  .login-message {
+    margin-top: 15px;
+    padding: 12px;
+  
+    border-radius: 8px;
+  
+    background: #eef8ff;
+    color: #0879c9;
+  
+    text-align: center;
+  
+    font-size: 13px;
+  }
+  
+  /* BACK */
+  
+  .back-button {
+    width: 100%;
+  
+    margin-top: 20px;
+  
+    border: none;
+    background: transparent;
+  
+    color: #627d98;
+  
+    font-size: 14px;
+  
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    color: #0879c9;
+  }
+  
+  /* RESEND */
+  
+  .resend-button {
+    display: block;
+  
+    margin: 15px auto 0;
+  
+    border: none;
+    background: transparent;
+  
+    color: #0879c9;
+  
+    font-size: 13px;
+    font-weight: 600;
+  
+    cursor: pointer;
+  }
+  
+  /* FOOTER */
+  
+  .login-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+  
+    border-top: 1px solid #edf2f7;
+  
+    text-align: center;
+  
+    color: #829ab1;
+  
+    font-size: 12px;
+  }
+  
+  .login-footer span {
+    margin-right: 5px;
+  }
+  
+  /* MOBILE */
+  
+  @media (max-width: 500px) {
+    .login-card {
+      padding: 30px 22px;
+    }
+  
+    .login-page {
+      padding: 20px;
+    }
+  }
+
+  .otp-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+  }
+  
+  .otp-box {
+    width: 58px !important;
+    height: 62px !important;
+  
+    padding: 0 !important;
+  
+    border: 1px solid #d9e2ec !important;
+    border-radius: 10px !important;
+  
+    background: #ffffff;
+  
+    text-align: center;
+  
+    font-size: 25px !important;
+    font-weight: 700;
+  
+    color: #102a43;
+  
+    outline: none;
+  
+    box-shadow: none !important;
+  
+    transition: all 0.2s ease;
+  }
+  
+  .otp-box:focus {
+    border-color: #0879c9 !important;
+  
+    box-shadow:
+      0 0 0 3px rgba(8, 121, 201, 0.12) !important;
+  
+    transform: translateY(-2px);
+  }
+  .otp-timer {
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  
+    margin: 20px 0 8px;
+    padding: 14px 16px;
+  
+    border: 1px solid #dcecf8;
+    border-radius: 12px;
+  
+    background: #f1f8fd;
+  
+    transition: 0.3s;
+  }
+  
+  .timer-icon {
+    width: 42px;
+    height: 42px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 10px;
+  
+    background: #ffffff;
+  
+    font-size: 20px;
+  
+    box-shadow:
+      0 3px 10px rgba(8, 121, 201, 0.08);
+  }
+  
+  .timer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .timer-info span {
+    color: #627d98;
+    font-size: 12px;
+  }
+  
+  .timer-info strong {
+    color: #0879c9;
+    font-size: 21px;
+    letter-spacing: 1px;
+  }
+  
+  .timer-warning {
+    background: #fff8ed;
+    border-color: #f5d7a0;
+  }
+  
+  .timer-warning .timer-info strong {
+    color: #d97706;
+  }
+  
+  .timer-expired {
+    background: #fff1f1;
+    border-color: #f3caca;
+  }
+  
+  .timer-expired .timer-info strong {
+    color: #dc2626;
+  }
+  
+  /* BARRA DE TIEMPO */
+  
+  .timer-progress {
+    width: 100%;
+    height: 5px;
+  
+    margin-bottom: 22px;
+  
+    overflow: hidden;
+  
+    border-radius: 10px;
+  
+    background: #e5edf5;
+  }
+  
+  .timer-progress-bar {
+    height: 100%;
+  
+    border-radius: 10px;
+  
+    background: #0879c9;
+  
+    transition:
+      width 1s linear,
+      background 0.3s;
+  }
+  
+  .timer-warning + .timer-progress
+  .timer-progress-bar {
+    background: #d97706;
+  }
+  
+  /* OTP */
+  
+  .otp-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .otp-box {
+    width: 58px !important;
+    height: 62px !important;
+  
+    padding: 0 !important;
+  
+    border: 1px solid #d9e2ec !important;
+    border-radius: 10px !important;
+  
+    background: #ffffff;
+  
+    text-align: center;
+  
+    color: #102a43;
+  
+    font-size: 25px !important;
+    font-weight: 700;
+  
+    outline: none;
+  
+    box-shadow: none !important;
+  
+    transition: 0.2s;
+  }
+  
+  .otp-box:focus {
+    border-color: #0879c9 !important;
+  
+    box-shadow:
+      0 0 0 3px
+      rgba(8, 121, 201, 0.12) !important;
+  
+    transform: translateY(-2px);
+  }
+  
+  .otp-box:disabled {
+    background: #f4f7fa;
+    cursor: not-allowed;
+  }
+  
+  /* REENVIAR */
+  
+  .resend-info {
+    margin-top: 16px;
+  
+    text-align: center;
+  
+    color: #829ab1;
+  
+    font-size: 12px;
+  }
+  
+  .resend-button {
+    display: block;
+  
+    width: 100%;
+  
+    margin-top: 18px;
+  
+    padding: 12px;
+  
+    border: 1px solid #0879c9;
+    border-radius: 8px;
+  
+    background: #ffffff;
+  
+    color: #0879c9;
+  
+    font-size: 14px;
+    font-weight: 600;
+  
+    cursor: pointer;
+  
+    transition: 0.3s;
+  }
+  
+  .resend-button:hover {
+    background: #eef8ff;
+  }
+  
+  .resend-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* RESPONSIVE */
+  
+  @media (max-width: 500px) {
+  
+    .otp-container {
+      gap: 7px;
+    }
+  
+    .otp-box {
+      width: 50px !important;
+      height: 55px !important;
+  
+      font-size: 22px !important;
+    }
+  
+    .otp-timer {
+      padding: 12px;
+    }
+  }
